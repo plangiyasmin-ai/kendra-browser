@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Unduh Kendra Browser - Peramban Python Cepat</title>
+    <!-- Memuat Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Konfigurasi Tailwind untuk Font Inter -->
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+    </style>
+</head>
+<body class="bg-gray-50">
+
+    <div class="min-h-screen flex flex-col justify-center items-center py-12 px-4 sm:px-6 lg:px-8">
+        
+        <!-- Header -->
+        <header class="text-center mb-10">
+            <div class="text-5xl font-extrabold text-indigo-700 tracking-tight mb-2">
+                Kendra Browser
+            </div>
+            <p class="text-xl text-gray-600">Peramban Web Python GUI yang Cepat untuk Termux VNC.</p>
+        </header>
+
+        <!-- Download Card -->
+        <div class="w-full max-w-2xl bg-white p-8 sm:p-10 rounded-2xl shadow-2xl border-t-8 border-indigo-600">
+            
+            <h2 class="text-3xl font-bold text-gray-900 mb-6">Unduh dan Jalankan</h2>
+            
+            <p class="mb-6 text-gray-700">Kendra Browser adalah aplikasi desktop Python. Anda perlu menjalankan *file* ini di lingkungan yang mendukung GUI, seperti VNC (Virtual Network Computing) di Termux.</p>
+
+            <!-- Download Button - Tautan menunjuk ke file ZIP -->
+            <a href="kendra_browser.zip" download="kendra_browser.zip" 
+               class="w-full inline-flex justify-center items-center px-8 py-4 border border-transparent text-xl font-bold rounded-xl shadow-lg text-white bg-indigo-600 hover:bg-indigo-700 transition duration-300 transform hover:scale-[1.02]">
+                <svg class="w-6 h-6 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"></path></svg>
+                Unduh kendra_browser.zip
+            </a>
+            
+            <hr class="my-8">
+
+            <!-- Installation Instructions -->
+            <h3 class="text-2xl font-semibold text-gray-800 mb-4">Panduan Instalasi (Termux)</h3>
+            
+            <div class="space-y-4">
+                <div>
+                    <p class="font-medium text-gray-900 mb-1">1. Pasang Prasyarat (Di Termux Biasa):</p>
+                    <code class="block bg-gray-100 text-gray-800 p-3 rounded-md overflow-x-auto text-sm">
+                        $ pkg update && pkg upgrade<br>
+                        $ pkg install python qt5-qtwebengine python-pyqtwebengine
+                    </code>
+                </div>
+                <div>
+                    <p class="font-medium text-gray-900 mb-1">2. Ekstrak dan Jalankan (Di Sesi VNC/XServer):</p>
+                    <code class="block bg-gray-100 text-gray-800 p-3 rounded-md overflow-x-auto text-sm">
+                        # Ekstrak file yang diunduh<br>
+                        $ unzip kendra_browser.zip<br>
+                        # Jalankan aplikasi<br>
+                        $ python kendra_browser.py
+                    </code>
+                </div>
+            </div>
+            
+        </div>
+
+        <footer class="mt-8 text-sm text-gray-500">
+            &copy; 2025 Kendra Browser Project. Dibuat dengan semangat *Open Source*.
+        </footer>
+
+    </div>
+
+</body>
+</html>
+
